@@ -1,5 +1,7 @@
 def my_each(items)
-	for item in items do 
+  var arr = items.collection{|item|}
+  while arr.empty? == false do
+	  item = arr.shift
 		yield item
 	end
 end
