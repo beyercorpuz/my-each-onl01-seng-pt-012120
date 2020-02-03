@@ -1,5 +1,5 @@
-def my_each(collectio) 
-  collection = [1, 2, 3, 4]
-my_each(collection) do |i|
-  puts i 
+def my_each(items)
+	for item in items do 
+		yield item
+	end
 end
