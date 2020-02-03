@@ -4,4 +4,5 @@ def my_each(items)
 	  item = arr.shift
 		yield item
 	end
+	return items
 end
